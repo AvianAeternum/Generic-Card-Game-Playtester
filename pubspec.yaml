@@ -1,0 +1,56 @@
+name: card
+description: ITs an appd
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  json_serializable: ^6.7.1
+  json_annotation: ^4.8.1
+  firebase_core: ^2.15.0
+  rxdart: ^0.27.7
+  memcached: ^1.0.2
+  firebase_storage: ^11.2.5
+  collection_walker: ^1.1.0
+  dough: ^1.0.4
+  precision_stopwatch: ^1.0.2
+  firebase_auth: ^4.7.1
+  cloud_firestore: ^4.8.3
+  universal_html: ^2.2.3
+  file_picker: ^5.3.2
+  flutter_animate: ^4.2.0
+  hive: ^2.2.3
+  tinycolor2: ^3.0.1
+  universal_io: ^2.2.2
+  padded: ^1.0.1
+  get: ^4.6.5
+  snackbar: ^1.0.2
+  dialoger: ^1.0.0
+  serviced: ^1.0.1
+  fast_log: ^1.0.7
+  throttled: ^1.0.1
+  tryhard: ^1.0.1
+  toxic: ^1.0.3
+  quantum: ^1.1.13
+  threshold: ^1.0.4
+  xl: ^0.9.1
+  foil: ^0.9.0+1
+  lzstring: ^2.0.0+2
+  google_sign_in: ^6.1.4
+dev_dependencies:
+
+  flutter_gen_runner: ^5.3.1
+  build_runner: ^2.4.6
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+flutter:
+  uses-material-design: true
+scripts:
+  upgrade_packages: |
+    flutter pub upgrade --major-versions --precompile
+    flutter pub outdated
+  update_json_models: flutter pub run build_runner build
+  update_json_models_force: flutter pub run build_runner build --delete-conflicting-outputs

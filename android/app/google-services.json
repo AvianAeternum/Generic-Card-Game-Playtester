@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "386555893652",
+    "project_id": "generic-card-game-playtester",
+    "storage_bucket": "generic-card-game-playtester.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386555893652:android:cf527fdfd8d5bcc92da181",
+        "android_client_info": {
+          "package_name": "ninja.bytecode.card"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386555893652-i7st7fco4n2qhoar3uj0vl53hgpsa0ru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLUa2oMS0qcDD3q_W1u9OD3ALKB7G2l6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386555893652-ahi8meh4j1o2jt87kupf91jqanvhekfr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
