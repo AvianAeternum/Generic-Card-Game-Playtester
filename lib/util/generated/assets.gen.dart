@@ -15,9 +15,11 @@ class Assets {
   Assets._();
 
   static const SvgGenImage google = SvgGenImage('assets/google.svg');
+  static const AssetGenImage iconPng = AssetGenImage('assets/icon.png');
+  static const SvgGenImage iconSvg = SvgGenImage('assets/icon.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [google];
+  List<dynamic> get values => [google, iconPng, iconSvg];
 }
 
 class AssetGenImage {

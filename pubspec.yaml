@@ -45,6 +45,7 @@ dependencies:
   bloc_concurrency: ^0.2.2
   replay_bloc: ^0.2.4
   sealed_flutter_bloc: ^8.0.1
+  delayed_progress_indicator: ^1.0.1
 flutter_gen:
   output: lib/util/generated/
   line_length: 80
@@ -62,6 +63,8 @@ flutter:
   uses-material-design: true
   assets:
     - assets/google.svg
+    - assets/icon.svg
+    - assets/icon.png
 scripts:
   upgrade_packages: |
     flutter pub upgrade --major-versions --precompile

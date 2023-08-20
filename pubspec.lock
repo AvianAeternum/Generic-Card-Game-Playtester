@@ -274,7 +274,7 @@ packages:
     source: hosted
     version: "1.2.0"
   delayed_progress_indicator:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: delayed_progress_indicator
       sha256: ccfc5d7000ca523479fda116646a31811e42e59905317738dc62be0e26d83418

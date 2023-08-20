@@ -1,12 +1,3 @@
-/*
- * Copyright (c) 2023. MyGuide
- *
- * MyGuide is a closed source project developed by Arcane Arts.
- * Do not copy, share, distribute or otherwise allow this source file
- * to leave hardware approved by Arcane Arts unless otherwise
- * approved by Arcane Arts.
- */
-
 import 'package:card/feature/login/bloc/login.dart';
 import 'package:card/sugar.dart';
 import 'package:card/util/generated/assets.gen.dart';
