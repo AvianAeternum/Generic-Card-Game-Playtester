@@ -1,4 +1,5 @@
 import 'package:card/feature/home/screen/home.dart';
+import 'package:card/feature/login/bloc/login.dart';
 import 'package:card/feature/login/screen/login.dart';
 import 'package:card/feature/login/screen/splash.dart';
 import 'package:card/feature/login/service/auth_service.dart';
@@ -6,6 +7,7 @@ import 'package:card/feature/user/service/user_service.dart';
 import 'package:card/sugar.dart';
 import 'package:fast_log/fast_log.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import 'package:serviced/serviced.dart';
 
@@ -24,7 +26,10 @@ class _CardAppState extends State<CardApp> {
   }
 
   @override
-  Widget build(BuildContext context) => GetMaterialApp(
+  Widget build(BuildContext context) => MultiBlocProvider(
+      providers: [BlocProvider<LoginBloc>(create: (_) => LoginBloc())],
+      child: GetMaterialApp(
+        theme: ThemeData.dark(useMaterial3: true),
         title: "Generic App",
         initialRoute: "/splash",
         getPages: [
@@ -41,7 +46,7 @@ class _CardAppState extends State<CardApp> {
               page: () => const SplashScreen(),
               middlewares: middlewares),
         ],
-      );
+      ));
 }
 
 bool fts = false;
