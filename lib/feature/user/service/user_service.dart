@@ -6,7 +6,32 @@ import 'package:flutter/material.dart';
 import 'package:serviced/serviced.dart';
 
 class UserService extends StatelessService {
-  /// Retrieve the current user data from the user id: [uid].
+  auth.User getCurrentUser() => auth.FirebaseAuth.instance.currentUser!;
+
+  String userId() => getCurrentUser().uid;
+
+  String uid() => getCurrentUser().uid;
+
+  bool bound = false;
+  late User lastUser;
+
+  Future<void> bind(String uid) async {
+    verbose("Binding user service for $uid");
+    try {
+      bool startup = true;
+
+      await Future.wait([
+        getUserData(uid).then((value) {
+          lastUser = value;
+          lastUser.uid = uid;
+        }),
+      ]);
+      bound = true;
+    } catch (e, es) {
+      bound = true;
+    }
+  }
+
   Future<User> getUserData(String uid,
           {String? firstName,
           String? lastName,
