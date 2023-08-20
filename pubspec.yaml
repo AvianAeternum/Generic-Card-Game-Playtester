@@ -39,6 +39,7 @@ dependencies:
   foil: ^0.9.0+1
   lzstring: ^2.0.0+2
   google_sign_in: ^6.1.4
+  flutter_svg: ^2.0.7
 dev_dependencies:
   flutter_gen_runner: ^5.3.1
   build_runner: ^2.4.6
